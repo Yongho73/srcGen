@@ -1,0 +1,563 @@
+2021-04-12 19:04:22 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - log4jdbc-logj2 properties initialization...
+2021-04-12 19:04:22 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - Using logger: net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator
+2021-04-12 19:04:22 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.debug.stack.prefix is not defined
+2021-04-12 19:04:22 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.sqltiming.warn.threshold is not defined
+2021-04-12 19:04:22 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.sqltiming.error.threshold is not defined
+2021-04-12 19:04:22 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.dump.booleanastruefalse is not defined (using default value false)
+2021-04-12 19:04:22 DEBUG [Slf4jSpyLogDelegator.java:debug:515] -   log4jdbc.dump.sql.maxlinelength = 0
+2021-04-12 19:04:22 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.dump.fulldebugstacktrace is not defined (using default value false)
+2021-04-12 19:04:22 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.statement.warn is not defined (using default value false)
+2021-04-12 19:04:22 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.dump.sql.select is not defined (using default value true)
+2021-04-12 19:04:22 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.dump.sql.insert is not defined (using default value true)
+2021-04-12 19:04:22 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.dump.sql.update is not defined (using default value true)
+2021-04-12 19:04:22 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.dump.sql.delete is not defined (using default value true)
+2021-04-12 19:04:22 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.dump.sql.create is not defined (using default value true)
+2021-04-12 19:04:22 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.dump.sql.addsemicolon is not defined (using default value false)
+2021-04-12 19:04:22 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.auto.load.popular.drivers is not defined (using default value true)
+2021-04-12 19:04:22 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.drivers is not defined
+2021-04-12 19:04:22 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.trim.sql is not defined (using default value true)
+2021-04-12 19:04:22 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.trim.sql.extrablanklines is not defined (using default value true)
+2021-04-12 19:04:22 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.suppress.generated.keys.exception is not defined (using default value false)
+2021-04-12 19:04:22 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - log4jdbc-logj2 properties initialization done.
+2021-04-12 19:04:22 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - DriverSpy intialization...
+2021-04-12 19:04:22 DEBUG [Slf4jSpyLogDelegator.java:debug:515] -   FOUND DRIVER com.microsoft.sqlserver.jdbc.SQLServerDriver
+2021-04-12 19:04:22 DEBUG [Slf4jSpyLogDelegator.java:debug:515] -   FOUND DRIVER com.mysql.jdbc.Driver
+2021-04-12 19:04:22 DEBUG [Slf4jSpyLogDelegator.java:debug:515] -   FOUND DRIVER oracle.jdbc.OracleDriver
+2021-04-12 19:04:22 DEBUG [Slf4jSpyLogDelegator.java:debug:515] -   FOUND DRIVER oracle.jdbc.driver.OracleDriver
+2021-04-12 19:04:22 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - DriverSpy intialization done.
+2021-04-12 19:04:22 DEBUG [LogFactory.java:setImplementation:105] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2021-04-12 19:04:22 DEBUG [PooledDataSource.java:forceCloseAll:334] - PooledDataSource forcefully closed/removed all connections.
+2021-04-12 19:04:22 DEBUG [PooledDataSource.java:forceCloseAll:334] - PooledDataSource forcefully closed/removed all connections.
+2021-04-12 19:04:22 DEBUG [PooledDataSource.java:forceCloseAll:334] - PooledDataSource forcefully closed/removed all connections.
+2021-04-12 19:04:22 DEBUG [PooledDataSource.java:forceCloseAll:334] - PooledDataSource forcefully closed/removed all connections.
+2021-04-12 19:04:22 ERROR [exception.java:<init>:61] - 
+
+------------------------------ error report
+에러클래스: org.apache.ibatis.exceptions.PersistenceException
+에러클래스명: kr.co.dbvision.batch.proc.bulet.logic.ProcessBuletMain
+에러파일명: ProcessBuletMain.java
+에러라인: 201
+에러메소드: triggerMysql
+주문번호: null
+에러코드: 0
+에러메시지: 
+### Error building SqlSession.
+### The error may exist in ./kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource ./kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+에러StacTrace: org.apache.ibatis.exceptions.PersistenceException: 
+### Error building SqlSession.
+### The error may exist in ./kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource ./kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:52)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:36)
+	at kr.co.dbvision.batch.proc.bulet.logic.ProcessBuletMain.ProcessBuletMysql(ProcessBuletMain.java:93)
+	at kr.co.dbvision.batch.proc.bulet.logic.ProcessBuletMain.triggerMysql(ProcessBuletMain.java:175)
+	at kr.co.dbvision.batch.proc.xgen.main(xgen.java:37)
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource ./kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:121)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:98)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:50)
+	... 4 more
+Caused by: java.io.IOException: Could not find resource ./kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:114)
+	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:100)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.mapperElement(XMLConfigBuilder.java:371)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:119)
+	... 6 more
+
+2021-04-12 19:14:29 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - log4jdbc-logj2 properties initialization...
+2021-04-12 19:14:29 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - Using logger: net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator
+2021-04-12 19:14:29 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.debug.stack.prefix is not defined
+2021-04-12 19:14:29 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.sqltiming.warn.threshold is not defined
+2021-04-12 19:14:29 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.sqltiming.error.threshold is not defined
+2021-04-12 19:14:29 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.dump.booleanastruefalse is not defined (using default value false)
+2021-04-12 19:14:29 DEBUG [Slf4jSpyLogDelegator.java:debug:515] -   log4jdbc.dump.sql.maxlinelength = 0
+2021-04-12 19:14:29 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.dump.fulldebugstacktrace is not defined (using default value false)
+2021-04-12 19:14:29 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.statement.warn is not defined (using default value false)
+2021-04-12 19:14:29 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.dump.sql.select is not defined (using default value true)
+2021-04-12 19:14:29 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.dump.sql.insert is not defined (using default value true)
+2021-04-12 19:14:29 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.dump.sql.update is not defined (using default value true)
+2021-04-12 19:14:29 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.dump.sql.delete is not defined (using default value true)
+2021-04-12 19:14:29 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.dump.sql.create is not defined (using default value true)
+2021-04-12 19:14:29 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.dump.sql.addsemicolon is not defined (using default value false)
+2021-04-12 19:14:29 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.auto.load.popular.drivers is not defined (using default value true)
+2021-04-12 19:14:29 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.drivers is not defined
+2021-04-12 19:14:29 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.trim.sql is not defined (using default value true)
+2021-04-12 19:14:29 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.trim.sql.extrablanklines is not defined (using default value true)
+2021-04-12 19:14:29 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.suppress.generated.keys.exception is not defined (using default value false)
+2021-04-12 19:14:29 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - log4jdbc-logj2 properties initialization done.
+2021-04-12 19:14:29 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - DriverSpy intialization...
+2021-04-12 19:14:29 DEBUG [Slf4jSpyLogDelegator.java:debug:515] -   FOUND DRIVER com.microsoft.sqlserver.jdbc.SQLServerDriver
+2021-04-12 19:14:29 DEBUG [Slf4jSpyLogDelegator.java:debug:515] -   FOUND DRIVER com.mysql.jdbc.Driver
+2021-04-12 19:14:29 DEBUG [Slf4jSpyLogDelegator.java:debug:515] -   FOUND DRIVER oracle.jdbc.OracleDriver
+2021-04-12 19:14:29 DEBUG [Slf4jSpyLogDelegator.java:debug:515] -   FOUND DRIVER oracle.jdbc.driver.OracleDriver
+2021-04-12 19:14:29 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - DriverSpy intialization done.
+2021-04-12 19:14:29 DEBUG [LogFactory.java:setImplementation:105] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2021-04-12 19:14:29 DEBUG [PooledDataSource.java:forceCloseAll:334] - PooledDataSource forcefully closed/removed all connections.
+2021-04-12 19:14:29 DEBUG [PooledDataSource.java:forceCloseAll:334] - PooledDataSource forcefully closed/removed all connections.
+2021-04-12 19:14:29 DEBUG [PooledDataSource.java:forceCloseAll:334] - PooledDataSource forcefully closed/removed all connections.
+2021-04-12 19:14:29 DEBUG [PooledDataSource.java:forceCloseAll:334] - PooledDataSource forcefully closed/removed all connections.
+2021-04-12 19:14:29 ERROR [exception.java:<init>:61] - 
+
+------------------------------ error report
+에러클래스: org.apache.ibatis.exceptions.PersistenceException
+에러클래스명: kr.co.dbvision.batch.proc.bulet.logic.ProcessBuletMain
+에러파일명: ProcessBuletMain.java
+에러라인: 201
+에러메소드: triggerMysql
+주문번호: null
+에러코드: 0
+에러메시지: 
+### Error building SqlSession.
+### The error may exist in /kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource /kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+에러StacTrace: org.apache.ibatis.exceptions.PersistenceException: 
+### Error building SqlSession.
+### The error may exist in /kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource /kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:52)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:36)
+	at kr.co.dbvision.batch.proc.bulet.logic.ProcessBuletMain.ProcessBuletMysql(ProcessBuletMain.java:93)
+	at kr.co.dbvision.batch.proc.bulet.logic.ProcessBuletMain.triggerMysql(ProcessBuletMain.java:175)
+	at kr.co.dbvision.batch.proc.xgen.main(xgen.java:37)
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource /kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:121)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:98)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:50)
+	... 4 more
+Caused by: java.io.IOException: Could not find resource /kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:114)
+	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:100)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.mapperElement(XMLConfigBuilder.java:371)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:119)
+	... 6 more
+
+2021-04-12 19:15:35 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - log4jdbc-logj2 properties initialization...
+2021-04-12 19:15:35 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - Using logger: net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator
+2021-04-12 19:15:35 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.debug.stack.prefix is not defined
+2021-04-12 19:15:35 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.sqltiming.warn.threshold is not defined
+2021-04-12 19:15:35 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.sqltiming.error.threshold is not defined
+2021-04-12 19:15:35 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.dump.booleanastruefalse is not defined (using default value false)
+2021-04-12 19:15:35 DEBUG [Slf4jSpyLogDelegator.java:debug:515] -   log4jdbc.dump.sql.maxlinelength = 0
+2021-04-12 19:15:35 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.dump.fulldebugstacktrace is not defined (using default value false)
+2021-04-12 19:15:35 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.statement.warn is not defined (using default value false)
+2021-04-12 19:15:35 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.dump.sql.select is not defined (using default value true)
+2021-04-12 19:15:35 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.dump.sql.insert is not defined (using default value true)
+2021-04-12 19:15:35 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.dump.sql.update is not defined (using default value true)
+2021-04-12 19:15:35 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.dump.sql.delete is not defined (using default value true)
+2021-04-12 19:15:35 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.dump.sql.create is not defined (using default value true)
+2021-04-12 19:15:35 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.dump.sql.addsemicolon is not defined (using default value false)
+2021-04-12 19:15:35 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.auto.load.popular.drivers is not defined (using default value true)
+2021-04-12 19:15:35 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.drivers is not defined
+2021-04-12 19:15:35 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.trim.sql is not defined (using default value true)
+2021-04-12 19:15:35 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.trim.sql.extrablanklines is not defined (using default value true)
+2021-04-12 19:15:35 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.suppress.generated.keys.exception is not defined (using default value false)
+2021-04-12 19:15:35 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - log4jdbc-logj2 properties initialization done.
+2021-04-12 19:15:35 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - DriverSpy intialization...
+2021-04-12 19:15:35 DEBUG [Slf4jSpyLogDelegator.java:debug:515] -   FOUND DRIVER com.microsoft.sqlserver.jdbc.SQLServerDriver
+2021-04-12 19:15:35 DEBUG [Slf4jSpyLogDelegator.java:debug:515] -   FOUND DRIVER com.mysql.jdbc.Driver
+2021-04-12 19:15:35 DEBUG [Slf4jSpyLogDelegator.java:debug:515] -   FOUND DRIVER oracle.jdbc.OracleDriver
+2021-04-12 19:15:35 DEBUG [Slf4jSpyLogDelegator.java:debug:515] -   FOUND DRIVER oracle.jdbc.driver.OracleDriver
+2021-04-12 19:15:35 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - DriverSpy intialization done.
+2021-04-12 19:15:35 DEBUG [LogFactory.java:setImplementation:105] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2021-04-12 19:15:35 DEBUG [PooledDataSource.java:forceCloseAll:334] - PooledDataSource forcefully closed/removed all connections.
+2021-04-12 19:15:35 DEBUG [PooledDataSource.java:forceCloseAll:334] - PooledDataSource forcefully closed/removed all connections.
+2021-04-12 19:15:35 DEBUG [PooledDataSource.java:forceCloseAll:334] - PooledDataSource forcefully closed/removed all connections.
+2021-04-12 19:15:35 DEBUG [PooledDataSource.java:forceCloseAll:334] - PooledDataSource forcefully closed/removed all connections.
+2021-04-12 19:15:35 ERROR [exception.java:<init>:61] - 
+
+------------------------------ error report
+에러클래스: org.apache.ibatis.exceptions.PersistenceException
+에러클래스명: kr.co.dbvision.batch.proc.bulet.logic.ProcessBuletMain
+에러파일명: ProcessBuletMain.java
+에러라인: 201
+에러메소드: triggerMysql
+주문번호: null
+에러코드: 0
+에러메시지: 
+### Error building SqlSession.
+### The error may exist in ./kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource ./kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+에러StacTrace: org.apache.ibatis.exceptions.PersistenceException: 
+### Error building SqlSession.
+### The error may exist in ./kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource ./kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:52)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:36)
+	at kr.co.dbvision.batch.proc.bulet.logic.ProcessBuletMain.ProcessBuletMysql(ProcessBuletMain.java:93)
+	at kr.co.dbvision.batch.proc.bulet.logic.ProcessBuletMain.triggerMysql(ProcessBuletMain.java:175)
+	at kr.co.dbvision.batch.proc.xgen.main(xgen.java:37)
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource ./kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:121)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:98)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:50)
+	... 4 more
+Caused by: java.io.IOException: Could not find resource ./kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:114)
+	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:100)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.mapperElement(XMLConfigBuilder.java:371)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:119)
+	... 6 more
+
+2021-04-12 19:18:11 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - log4jdbc-logj2 properties initialization...
+2021-04-12 19:18:11 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - Using logger: net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator
+2021-04-12 19:18:11 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.debug.stack.prefix is not defined
+2021-04-12 19:18:11 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.sqltiming.warn.threshold is not defined
+2021-04-12 19:18:11 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.sqltiming.error.threshold is not defined
+2021-04-12 19:18:11 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.dump.booleanastruefalse is not defined (using default value false)
+2021-04-12 19:18:11 DEBUG [Slf4jSpyLogDelegator.java:debug:515] -   log4jdbc.dump.sql.maxlinelength = 0
+2021-04-12 19:18:11 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.dump.fulldebugstacktrace is not defined (using default value false)
+2021-04-12 19:18:11 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.statement.warn is not defined (using default value false)
+2021-04-12 19:18:11 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.dump.sql.select is not defined (using default value true)
+2021-04-12 19:18:11 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.dump.sql.insert is not defined (using default value true)
+2021-04-12 19:18:11 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.dump.sql.update is not defined (using default value true)
+2021-04-12 19:18:11 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.dump.sql.delete is not defined (using default value true)
+2021-04-12 19:18:11 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.dump.sql.create is not defined (using default value true)
+2021-04-12 19:18:11 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.dump.sql.addsemicolon is not defined (using default value false)
+2021-04-12 19:18:11 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.auto.load.popular.drivers is not defined (using default value true)
+2021-04-12 19:18:11 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.drivers is not defined
+2021-04-12 19:18:11 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.trim.sql is not defined (using default value true)
+2021-04-12 19:18:11 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.trim.sql.extrablanklines is not defined (using default value true)
+2021-04-12 19:18:11 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.suppress.generated.keys.exception is not defined (using default value false)
+2021-04-12 19:18:11 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - log4jdbc-logj2 properties initialization done.
+2021-04-12 19:18:11 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - DriverSpy intialization...
+2021-04-12 19:18:11 DEBUG [Slf4jSpyLogDelegator.java:debug:515] -   FOUND DRIVER com.microsoft.sqlserver.jdbc.SQLServerDriver
+2021-04-12 19:18:11 DEBUG [Slf4jSpyLogDelegator.java:debug:515] -   FOUND DRIVER com.mysql.jdbc.Driver
+2021-04-12 19:18:11 DEBUG [Slf4jSpyLogDelegator.java:debug:515] -   FOUND DRIVER oracle.jdbc.OracleDriver
+2021-04-12 19:18:11 DEBUG [Slf4jSpyLogDelegator.java:debug:515] -   FOUND DRIVER oracle.jdbc.driver.OracleDriver
+2021-04-12 19:18:11 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - DriverSpy intialization done.
+2021-04-12 19:18:11 DEBUG [LogFactory.java:setImplementation:105] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2021-04-12 19:18:11 DEBUG [PooledDataSource.java:forceCloseAll:334] - PooledDataSource forcefully closed/removed all connections.
+2021-04-12 19:18:11 DEBUG [PooledDataSource.java:forceCloseAll:334] - PooledDataSource forcefully closed/removed all connections.
+2021-04-12 19:18:11 DEBUG [PooledDataSource.java:forceCloseAll:334] - PooledDataSource forcefully closed/removed all connections.
+2021-04-12 19:18:11 DEBUG [PooledDataSource.java:forceCloseAll:334] - PooledDataSource forcefully closed/removed all connections.
+2021-04-12 19:18:12 ERROR [exception.java:<init>:61] - 
+
+------------------------------ error report
+에러클래스: org.apache.ibatis.exceptions.PersistenceException
+에러클래스명: kr.co.dbvision.batch.proc.bulet.logic.ProcessBuletMain
+에러파일명: ProcessBuletMain.java
+에러라인: 201
+에러메소드: triggerMysql
+주문번호: null
+에러코드: 0
+에러메시지: 
+### Error building SqlSession.
+### The error may exist in ./kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource ./kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+에러StacTrace: org.apache.ibatis.exceptions.PersistenceException: 
+### Error building SqlSession.
+### The error may exist in ./kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource ./kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:52)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:36)
+	at kr.co.dbvision.batch.proc.bulet.logic.ProcessBuletMain.ProcessBuletMysql(ProcessBuletMain.java:93)
+	at kr.co.dbvision.batch.proc.bulet.logic.ProcessBuletMain.triggerMysql(ProcessBuletMain.java:175)
+	at kr.co.dbvision.batch.proc.xgen.main(xgen.java:37)
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource ./kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:121)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:98)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:50)
+	... 4 more
+Caused by: java.io.IOException: Could not find resource ./kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:114)
+	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:100)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.mapperElement(XMLConfigBuilder.java:371)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:119)
+	... 6 more
+
+2021-04-12 19:19:31 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - log4jdbc-logj2 properties initialization...
+2021-04-12 19:19:31 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - Using logger: net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator
+2021-04-12 19:19:31 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.debug.stack.prefix is not defined
+2021-04-12 19:19:31 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.sqltiming.warn.threshold is not defined
+2021-04-12 19:19:31 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.sqltiming.error.threshold is not defined
+2021-04-12 19:19:31 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.dump.booleanastruefalse is not defined (using default value false)
+2021-04-12 19:19:31 DEBUG [Slf4jSpyLogDelegator.java:debug:515] -   log4jdbc.dump.sql.maxlinelength = 0
+2021-04-12 19:19:31 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.dump.fulldebugstacktrace is not defined (using default value false)
+2021-04-12 19:19:31 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.statement.warn is not defined (using default value false)
+2021-04-12 19:19:31 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.dump.sql.select is not defined (using default value true)
+2021-04-12 19:19:31 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.dump.sql.insert is not defined (using default value true)
+2021-04-12 19:19:31 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.dump.sql.update is not defined (using default value true)
+2021-04-12 19:19:31 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.dump.sql.delete is not defined (using default value true)
+2021-04-12 19:19:31 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.dump.sql.create is not defined (using default value true)
+2021-04-12 19:19:31 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.dump.sql.addsemicolon is not defined (using default value false)
+2021-04-12 19:19:31 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.auto.load.popular.drivers is not defined (using default value true)
+2021-04-12 19:19:31 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.drivers is not defined
+2021-04-12 19:19:31 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.trim.sql is not defined (using default value true)
+2021-04-12 19:19:31 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.trim.sql.extrablanklines is not defined (using default value true)
+2021-04-12 19:19:31 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - x log4jdbc.suppress.generated.keys.exception is not defined (using default value false)
+2021-04-12 19:19:31 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - log4jdbc-logj2 properties initialization done.
+2021-04-12 19:19:31 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - DriverSpy intialization...
+2021-04-12 19:19:32 DEBUG [Slf4jSpyLogDelegator.java:debug:515] -   FOUND DRIVER com.microsoft.sqlserver.jdbc.SQLServerDriver
+2021-04-12 19:19:32 DEBUG [Slf4jSpyLogDelegator.java:debug:515] -   FOUND DRIVER com.mysql.jdbc.Driver
+2021-04-12 19:19:32 DEBUG [Slf4jSpyLogDelegator.java:debug:515] -   FOUND DRIVER oracle.jdbc.OracleDriver
+2021-04-12 19:19:32 DEBUG [Slf4jSpyLogDelegator.java:debug:515] -   FOUND DRIVER oracle.jdbc.driver.OracleDriver
+2021-04-12 19:19:32 DEBUG [Slf4jSpyLogDelegator.java:debug:515] - DriverSpy intialization done.
+2021-04-12 19:19:32 DEBUG [LogFactory.java:setImplementation:105] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2021-04-12 19:19:32 DEBUG [PooledDataSource.java:forceCloseAll:334] - PooledDataSource forcefully closed/removed all connections.
+2021-04-12 19:19:32 DEBUG [PooledDataSource.java:forceCloseAll:334] - PooledDataSource forcefully closed/removed all connections.
+2021-04-12 19:19:32 DEBUG [PooledDataSource.java:forceCloseAll:334] - PooledDataSource forcefully closed/removed all connections.
+2021-04-12 19:19:32 DEBUG [PooledDataSource.java:forceCloseAll:334] - PooledDataSource forcefully closed/removed all connections.
+2021-04-12 19:19:32 INFO  [ProcessBuletMain.java:triggerMysql:176] - [Mysql 소스제너레이터] start >>>
+2021-04-12 19:19:32 DEBUG [JdbcTransaction.java:openConnection:136] - Opening JDBC Connection
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. Connection.new Connection returned   java.sql.DriverManager.getConnection(DriverManager.java:664)
+2021-04-12 19:19:33 DEBUG [PooledDataSource.java:popConnection:405] - Created connection 944427387.
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. Connection.isClosed() returned false  org.apache.ibatis.datasource.pooled.PooledDataSource.pingConnection(PooledDataSource.java:509)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. Connection.getAutoCommit() returned true  org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:461)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. Connection.getAutoCommit() returned true  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [JdbcTransaction.java:setDesiredAutoCommit:100] - Setting autocommit to false on JDBC Connection [net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@384ad17b]
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. Connection.setAutoCommit(false) returned   sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [BaseJdbcLogger.java:debug:143] - ==>  Preparing: /* batch.bulet.selectProgList */ SELECT PROGRM_ID AS menuId, PROGRM_NM AS menuNm, PCKAGE_NM AS pckageNm, SUB_PCKAGE_ID AS subPackageId, PROGRM_ID AS progrmId, REL_TBL_NM AS relTableName FROM STM_PROGRM WHERE PROGRM_ID = ? 
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. PreparedStatement.new PreparedStatement returned   sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. Connection.prepareStatement(/* batch.bulet.selectProgList */
+        SELECT PROGRM_ID AS menuId,            
+               PROGRM_NM AS menuNm,
+               PCKAGE_NM AS pckageNm,
+               SUB_PCKAGE_ID AS subPackageId,
+               PROGRM_ID AS progrmId,
+               REL_TBL_NM AS relTableName 
+          FROM STM_PROGRM
+
+         WHERE  PROGRM_ID = ?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@37afeb11  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. PreparedStatement.setString(1, "MHSHRB000") returned   sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [BaseJdbcLogger.java:debug:143] - ==> Parameters: MHSHRB000(String)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:sqlOccurred:223] -  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+1. /* batch.bulet.selectProgList */
+        SELECT PROGRM_ID AS menuId,            
+               PROGRM_NM AS menuNm,
+               PCKAGE_NM AS pckageNm,
+               SUB_PCKAGE_ID AS subPackageId,
+               PROGRM_ID AS progrmId,
+               REL_TBL_NM AS relTableName 
+          FROM STM_PROGRM
+
+         WHERE  PROGRM_ID = 'MHSHRB000'
+
+2021-04-12 19:19:33 INFO  [Slf4jSpyLogDelegator.java:sqlTimingOccurred:373] - /* batch.bulet.selectProgList */
+        SELECT PROGRM_ID AS menuId,            
+               PROGRM_NM AS menuNm,
+               PCKAGE_NM AS pckageNm,
+               SUB_PCKAGE_ID AS subPackageId,
+               PROGRM_ID AS progrmId,
+               REL_TBL_NM AS relTableName 
+          FROM STM_PROGRM
+
+         WHERE  PROGRM_ID = 'MHSHRB000'
+ {executed in 22 msec}
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. PreparedStatement.execute() returned true  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@2f9f7dcf  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [BaseJdbcLogger.java:debug:143] - <==      Total: 1
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. PreparedStatement.getConnection() returned net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@384ad17b  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaData@4c371370  org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getNextResultSet(DefaultResultSetHandler.java:256)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. PreparedStatement.getMoreResults() returned false  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. PreparedStatement.getUpdateCount() returned -1  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. PreparedStatement.close() returned   sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [BaseJdbcLogger.java:debug:143] - ==>  Preparing: /* batch.bulet.selectTableKeyColumn */ SELECT column_name AS columnName FROM information_schema.`COLUMNS` WHERE table_schema = ? AND table_name = ? AND column_key = 'PRI' ORDER BY ordinal_position 
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. PreparedStatement.new PreparedStatement returned   sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. Connection.prepareStatement(/* batch.bulet.selectTableKeyColumn */
+        SELECT column_name AS columnName
+		FROM information_schema.`COLUMNS` 
+		WHERE table_schema = ?
+		AND table_name = ?
+		AND column_key = 'PRI'
+		ORDER BY ordinal_position) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@459e9125  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. PreparedStatement.setString(1, "erpsw") returned   sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. PreparedStatement.setString(2, "MHS_PROOF_ISSU") returned   sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [BaseJdbcLogger.java:debug:143] - ==> Parameters: erpsw(String), MHS_PROOF_ISSU(String)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:sqlOccurred:223] -  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+1. /* batch.bulet.selectTableKeyColumn */
+        SELECT column_name AS columnName
+		FROM information_schema.`COLUMNS` 
+		WHERE table_schema = 'erpsw'
+		AND table_name = 'MHS_PROOF_ISSU'
+		AND column_key = 'PRI'
+		ORDER BY ordinal_position
+
+2021-04-12 19:19:33 INFO  [Slf4jSpyLogDelegator.java:sqlTimingOccurred:373] - /* batch.bulet.selectTableKeyColumn */
+        SELECT column_name AS columnName
+		FROM information_schema.`COLUMNS` 
+		WHERE table_schema = 'erpsw'
+		AND table_name = 'MHS_PROOF_ISSU'
+		AND column_key = 'PRI'
+		ORDER BY ordinal_position
+ {executed in 3 msec}
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. PreparedStatement.execute() returned true  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@128d2484  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [BaseJdbcLogger.java:debug:143] - <==      Total: 2
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. PreparedStatement.getConnection() returned net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@384ad17b  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaData@368f2016  org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getNextResultSet(DefaultResultSetHandler.java:256)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. PreparedStatement.getMoreResults() returned false  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. PreparedStatement.getUpdateCount() returned -1  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. PreparedStatement.close() returned   sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [BaseJdbcLogger.java:debug:143] - ==>  Preparing: /* batch.bulet.selectTableColumn */ SELECT table_schema as owner, table_name AS tableName, ordinal_position AS columnId, column_name AS columnName , column_comment AS comments, data_type AS dataType, IFNULL(CAST(CHARACTER_MAXIMUM_LENGTH AS CHAR(10)), CONCAT(CAST(NUMERIC_PRECISION AS CHAR(10)),',',CAST(NUMERIC_SCALE AS CHAR(10)))) AS dataLength, LEFT(is_nullable,1) AS nullable -- /*, column_key */ FROM information_schema.`COLUMNS` WHERE table_schema = ? AND table_name = ? ORDER BY tableName, columnId; 
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. PreparedStatement.new PreparedStatement returned   sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. Connection.prepareStatement(/* batch.bulet.selectTableColumn */
+        SELECT table_schema as owner, table_name AS tableName, ordinal_position AS columnId, column_name AS columnName , column_comment AS comments, 
+		    data_type AS dataType, 
+		    IFNULL(CAST(CHARACTER_MAXIMUM_LENGTH AS CHAR(10)), CONCAT(CAST(NUMERIC_PRECISION AS CHAR(10)),',',CAST(NUMERIC_SCALE AS CHAR(10)))) AS dataLength,
+		                     LEFT(is_nullable,1) AS nullable  -- 
+			    /*, column_key */
+			FROM information_schema.`COLUMNS` 
+			WHERE table_schema = ?
+			AND table_name = ?
+			ORDER BY tableName, columnId;) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@55182842  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. PreparedStatement.setString(1, "erpsw") returned   sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. PreparedStatement.setString(2, "MHS_PROOF_ISSU") returned   sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [BaseJdbcLogger.java:debug:143] - ==> Parameters: erpsw(String), MHS_PROOF_ISSU(String)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:sqlOccurred:223] -  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+1. /* batch.bulet.selectTableColumn */
+        SELECT table_schema as owner, table_name AS tableName, ordinal_position AS columnId, column_name AS columnName , column_comment AS comments, 
+		    data_type AS dataType, 
+		    IFNULL(CAST(CHARACTER_MAXIMUM_LENGTH AS CHAR(10)), CONCAT(CAST(NUMERIC_PRECISION AS CHAR(10)),',',CAST(NUMERIC_SCALE AS CHAR(10)))) AS dataLength,
+		                     LEFT(is_nullable,1) AS nullable  -- 
+			    /*, column_key */
+			FROM information_schema.`COLUMNS` 
+			WHERE table_schema = 'erpsw'
+			AND table_name = 'MHS_PROOF_ISSU'
+			ORDER BY tableName, columnId;
+
+2021-04-12 19:19:33 INFO  [Slf4jSpyLogDelegator.java:sqlTimingOccurred:373] - /* batch.bulet.selectTableColumn */
+        SELECT table_schema as owner, table_name AS tableName, ordinal_position AS columnId, column_name AS columnName , column_comment AS comments, 
+		    data_type AS dataType, 
+		    IFNULL(CAST(CHARACTER_MAXIMUM_LENGTH AS CHAR(10)), CONCAT(CAST(NUMERIC_PRECISION AS CHAR(10)),',',CAST(NUMERIC_SCALE AS CHAR(10)))) AS dataLength,
+		                     LEFT(is_nullable,1) AS nullable  -- 
+			    /*, column_key */
+			FROM information_schema.`COLUMNS` 
+			WHERE table_schema = 'erpsw'
+			AND table_name = 'MHS_PROOF_ISSU'
+			ORDER BY tableName, columnId;
+ {executed in 4 msec}
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. PreparedStatement.execute() returned true  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@3270d194  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [BaseJdbcLogger.java:debug:143] - <==      Total: 28
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. PreparedStatement.getConnection() returned net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@384ad17b  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaData@5fe94a96  org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getNextResultSet(DefaultResultSetHandler.java:256)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. PreparedStatement.getMoreResults() returned false  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. PreparedStatement.getUpdateCount() returned -1  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. PreparedStatement.close() returned   sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [BaseJdbcLogger.java:debug:143] - ==>  Preparing: /* batch.bulet.selectCondList */ SELECT A.CND_TY AS cndTy, A.CMMN_CODE AS cmmnCode, C.columnName AS columnName, C.comments AS comments FROM STM_CND A, STM_PROGRM B, ( SELECT table_name AS tableName, column_name AS columnName, column_comment AS comments FROM information_schema.`COLUMNS` WHERE table_schema = ? ) C WHERE A.PROGRM_ID = B.PROGRM_ID AND B.REL_TBL_NM = C.tableName AND A.COL = C.columnName AND A.PROGRM_ID = ? ORDER BY OUTPT_ORDR 
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. PreparedStatement.new PreparedStatement returned   sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. Connection.prepareStatement(/* batch.bulet.selectCondList */
+        SELECT A.CND_TY      AS cndTy,
+               A.CMMN_CODE   AS cmmnCode,
+               C.columnName AS columnName,
+               C.comments    AS comments
+          FROM STM_CND A, STM_PROGRM B, 
+            (
+                SELECT table_name AS tableName, 
+                    column_name AS columnName,
+                    column_comment AS comments
+                FROM information_schema.`COLUMNS` 
+                WHERE table_schema = ?
+            ) C
+         WHERE A.PROGRM_ID = B.PROGRM_ID
+           AND B.REL_TBL_NM = C.tableName
+           AND A.COL = C.columnName
+           AND A.PROGRM_ID = ?
+         ORDER BY OUTPT_ORDR) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@6b2ea799  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. PreparedStatement.setString(1, "xerp_2021") returned   sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. PreparedStatement.setString(2, "MHSHRB000") returned   sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [BaseJdbcLogger.java:debug:143] - ==> Parameters: xerp_2021(String), MHSHRB000(String)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:sqlOccurred:223] -  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+1. /* batch.bulet.selectCondList */
+        SELECT A.CND_TY      AS cndTy,
+               A.CMMN_CODE   AS cmmnCode,
+               C.columnName AS columnName,
+               C.comments    AS comments
+          FROM STM_CND A, STM_PROGRM B, 
+            (
+                SELECT table_name AS tableName, 
+                    column_name AS columnName,
+                    column_comment AS comments
+                FROM information_schema.`COLUMNS` 
+                WHERE table_schema = 'xerp_2021'
+            ) C
+         WHERE A.PROGRM_ID = B.PROGRM_ID
+           AND B.REL_TBL_NM = C.tableName
+           AND A.COL = C.columnName
+           AND A.PROGRM_ID = 'MHSHRB000'
+         ORDER BY OUTPT_ORDR
+
+2021-04-12 19:19:33 INFO  [Slf4jSpyLogDelegator.java:sqlTimingOccurred:373] - /* batch.bulet.selectCondList */
+        SELECT A.CND_TY      AS cndTy,
+               A.CMMN_CODE   AS cmmnCode,
+               C.columnName AS columnName,
+               C.comments    AS comments
+          FROM STM_CND A, STM_PROGRM B, 
+            (
+                SELECT table_name AS tableName, 
+                    column_name AS columnName,
+                    column_comment AS comments
+                FROM information_schema.`COLUMNS` 
+                WHERE table_schema = 'xerp_2021'
+            ) C
+         WHERE A.PROGRM_ID = B.PROGRM_ID
+           AND B.REL_TBL_NM = C.tableName
+           AND A.COL = C.columnName
+           AND A.PROGRM_ID = 'MHSHRB000'
+         ORDER BY OUTPT_ORDR
+ {executed in 2 msec}
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. PreparedStatement.execute() returned true  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@411f53a0  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [BaseJdbcLogger.java:debug:143] - <==      Total: 0
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. PreparedStatement.getConnection() returned net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@384ad17b  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaData@4afcd809  org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getNextResultSet(DefaultResultSetHandler.java:256)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. PreparedStatement.getMoreResults() returned false  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. PreparedStatement.getUpdateCount() returned -1  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. PreparedStatement.close() returned   sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [BaseJdbcLogger.java:debug:143] - ==>  Preparing: /* batch.bulet.selectTableKeyColumn */ SELECT column_name AS columnName, IFNULL(CAST(CHARACTER_MAXIMUM_LENGTH AS CHAR(10)), CONCAT(CAST(NUMERIC_PRECISION AS CHAR(10)),',',CAST(NUMERIC_SCALE AS CHAR(10)))) AS dataLength, column_comment AS comments FROM information_schema.`COLUMNS` WHERE table_schema = ? AND table_name = ? AND column_key = 'PRI' ORDER BY ordinal_position 
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. PreparedStatement.new PreparedStatement returned   sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. Connection.prepareStatement(/* batch.bulet.selectTableKeyColumn */
+        SELECT column_name AS columnName, 
+            IFNULL(CAST(CHARACTER_MAXIMUM_LENGTH AS CHAR(10)), CONCAT(CAST(NUMERIC_PRECISION AS CHAR(10)),',',CAST(NUMERIC_SCALE AS CHAR(10)))) AS dataLength,
+            column_comment AS comments
+        FROM information_schema.`COLUMNS` 
+        WHERE table_schema = ?
+        AND table_name = ?
+        AND column_key = 'PRI'
+        ORDER BY ordinal_position) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@6150c3ec  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. PreparedStatement.setString(1, "erpsw") returned   sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. PreparedStatement.setString(2, "MHS_PROOF_ISSU") returned   sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [BaseJdbcLogger.java:debug:143] - ==> Parameters: erpsw(String), MHS_PROOF_ISSU(String)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:sqlOccurred:223] -  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+1. /* batch.bulet.selectTableKeyColumn */
+        SELECT column_name AS columnName, 
+            IFNULL(CAST(CHARACTER_MAXIMUM_LENGTH AS CHAR(10)), CONCAT(CAST(NUMERIC_PRECISION AS CHAR(10)),',',CAST(NUMERIC_SCALE AS CHAR(10)))) AS dataLength,
+            column_comment AS comments
+        FROM information_schema.`COLUMNS` 
+        WHERE table_schema = 'erpsw'
+        AND table_name = 'MHS_PROOF_ISSU'
+        AND column_key = 'PRI'
+        ORDER BY ordinal_position
+
+2021-04-12 19:19:33 INFO  [Slf4jSpyLogDelegator.java:sqlTimingOccurred:373] - /* batch.bulet.selectTableKeyColumn */
+        SELECT column_name AS columnName, 
+            IFNULL(CAST(CHARACTER_MAXIMUM_LENGTH AS CHAR(10)), CONCAT(CAST(NUMERIC_PRECISION AS CHAR(10)),',',CAST(NUMERIC_SCALE AS CHAR(10)))) AS dataLength,
+            column_comment AS comments
+        FROM information_schema.`COLUMNS` 
+        WHERE table_schema = 'erpsw'
+        AND table_name = 'MHS_PROOF_ISSU'
+        AND column_key = 'PRI'
+        ORDER BY ordinal_position
+ {executed in 3 msec}
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. PreparedStatement.execute() returned true  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@44c03695  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [BaseJdbcLogger.java:debug:143] - <==      Total: 2
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. PreparedStatement.getConnection() returned net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@384ad17b  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaData@10683d9d  org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getNextResultSet(DefaultResultSetHandler.java:256)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. PreparedStatement.getMoreResults() returned false  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. PreparedStatement.getUpdateCount() returned -1  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. PreparedStatement.close() returned   sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 INFO  [ProcessBuletMain.java:triggerMysql:187] - [소스제너레이터] 경과시간 :[0.913]
+2021-04-12 19:19:33 INFO  [ProcessBuletMain.java:triggerMysql:188] - [소스제너레이터] end >>>
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. Connection.getAutoCommit() returned false  sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [JdbcTransaction.java:resetAutoCommit:122] - Resetting autocommit to true on JDBC Connection [net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@384ad17b]
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. Connection.setAutoCommit(true) returned   sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:-2)
+2021-04-12 19:19:33 DEBUG [JdbcTransaction.java:close:90] - Closing JDBC Connection [net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@384ad17b]
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. Connection.isClosed() returned false  org.apache.ibatis.datasource.pooled.PooledDataSource.pingConnection(PooledDataSource.java:509)
+2021-04-12 19:19:33 DEBUG [Slf4jSpyLogDelegator.java:methodReturned:171] - 1. Connection.getAutoCommit() returned true  org.apache.ibatis.datasource.pooled.PooledDataSource.pushConnection(PooledDataSource.java:353)
+2021-04-12 19:19:33 DEBUG [PooledDataSource.java:pushConnection:362] - Returned connection 944427387 to pool.

@@ -1,0 +1,206 @@
+2021-04-12 19:04:22 ERROR [exception.java:<init>:61] - 
+
+------------------------------ error report
+에러클래스: org.apache.ibatis.exceptions.PersistenceException
+에러클래스명: kr.co.dbvision.batch.proc.bulet.logic.ProcessBuletMain
+에러파일명: ProcessBuletMain.java
+에러라인: 201
+에러메소드: triggerMysql
+주문번호: null
+에러코드: 0
+에러메시지: 
+### Error building SqlSession.
+### The error may exist in ./kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource ./kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+에러StacTrace: org.apache.ibatis.exceptions.PersistenceException: 
+### Error building SqlSession.
+### The error may exist in ./kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource ./kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:52)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:36)
+	at kr.co.dbvision.batch.proc.bulet.logic.ProcessBuletMain.ProcessBuletMysql(ProcessBuletMain.java:93)
+	at kr.co.dbvision.batch.proc.bulet.logic.ProcessBuletMain.triggerMysql(ProcessBuletMain.java:175)
+	at kr.co.dbvision.batch.proc.xgen.main(xgen.java:37)
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource ./kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:121)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:98)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:50)
+	... 4 more
+Caused by: java.io.IOException: Could not find resource ./kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:114)
+	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:100)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.mapperElement(XMLConfigBuilder.java:371)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:119)
+	... 6 more
+
+2021-04-12 19:14:29 ERROR [exception.java:<init>:61] - 
+
+------------------------------ error report
+에러클래스: org.apache.ibatis.exceptions.PersistenceException
+에러클래스명: kr.co.dbvision.batch.proc.bulet.logic.ProcessBuletMain
+에러파일명: ProcessBuletMain.java
+에러라인: 201
+에러메소드: triggerMysql
+주문번호: null
+에러코드: 0
+에러메시지: 
+### Error building SqlSession.
+### The error may exist in /kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource /kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+에러StacTrace: org.apache.ibatis.exceptions.PersistenceException: 
+### Error building SqlSession.
+### The error may exist in /kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource /kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:52)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:36)
+	at kr.co.dbvision.batch.proc.bulet.logic.ProcessBuletMain.ProcessBuletMysql(ProcessBuletMain.java:93)
+	at kr.co.dbvision.batch.proc.bulet.logic.ProcessBuletMain.triggerMysql(ProcessBuletMain.java:175)
+	at kr.co.dbvision.batch.proc.xgen.main(xgen.java:37)
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource /kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:121)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:98)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:50)
+	... 4 more
+Caused by: java.io.IOException: Could not find resource /kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:114)
+	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:100)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.mapperElement(XMLConfigBuilder.java:371)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:119)
+	... 6 more
+
+2021-04-12 19:15:35 ERROR [exception.java:<init>:61] - 
+
+------------------------------ error report
+에러클래스: org.apache.ibatis.exceptions.PersistenceException
+에러클래스명: kr.co.dbvision.batch.proc.bulet.logic.ProcessBuletMain
+에러파일명: ProcessBuletMain.java
+에러라인: 201
+에러메소드: triggerMysql
+주문번호: null
+에러코드: 0
+에러메시지: 
+### Error building SqlSession.
+### The error may exist in ./kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource ./kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+에러StacTrace: org.apache.ibatis.exceptions.PersistenceException: 
+### Error building SqlSession.
+### The error may exist in ./kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource ./kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:52)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:36)
+	at kr.co.dbvision.batch.proc.bulet.logic.ProcessBuletMain.ProcessBuletMysql(ProcessBuletMain.java:93)
+	at kr.co.dbvision.batch.proc.bulet.logic.ProcessBuletMain.triggerMysql(ProcessBuletMain.java:175)
+	at kr.co.dbvision.batch.proc.xgen.main(xgen.java:37)
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource ./kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:121)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:98)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:50)
+	... 4 more
+Caused by: java.io.IOException: Could not find resource ./kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:114)
+	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:100)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.mapperElement(XMLConfigBuilder.java:371)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:119)
+	... 6 more
+
+2021-04-12 19:18:12 ERROR [exception.java:<init>:61] - 
+
+------------------------------ error report
+에러클래스: org.apache.ibatis.exceptions.PersistenceException
+에러클래스명: kr.co.dbvision.batch.proc.bulet.logic.ProcessBuletMain
+에러파일명: ProcessBuletMain.java
+에러라인: 201
+에러메소드: triggerMysql
+주문번호: null
+에러코드: 0
+에러메시지: 
+### Error building SqlSession.
+### The error may exist in ./kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource ./kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+에러StacTrace: org.apache.ibatis.exceptions.PersistenceException: 
+### Error building SqlSession.
+### The error may exist in ./kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource ./kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:52)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:36)
+	at kr.co.dbvision.batch.proc.bulet.logic.ProcessBuletMain.ProcessBuletMysql(ProcessBuletMain.java:93)
+	at kr.co.dbvision.batch.proc.bulet.logic.ProcessBuletMain.triggerMysql(ProcessBuletMain.java:175)
+	at kr.co.dbvision.batch.proc.xgen.main(xgen.java:37)
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource ./kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:121)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:98)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:50)
+	... 4 more
+Caused by: java.io.IOException: Could not find resource ./kr/co/dbvision/batch/proc/bulet/dao/sql/BuletMapperForMysql.xml
+	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:114)
+	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:100)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.mapperElement(XMLConfigBuilder.java:371)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:119)
+	... 6 more
+
+2021-04-12 19:19:32 INFO  [ProcessBuletMain.java:triggerMysql:176] - [Mysql 소스제너레이터] start >>>
+2021-04-12 19:19:33 INFO  [Slf4jSpyLogDelegator.java:sqlTimingOccurred:373] - /* batch.bulet.selectProgList */
+        SELECT PROGRM_ID AS menuId,            
+               PROGRM_NM AS menuNm,
+               PCKAGE_NM AS pckageNm,
+               SUB_PCKAGE_ID AS subPackageId,
+               PROGRM_ID AS progrmId,
+               REL_TBL_NM AS relTableName 
+          FROM STM_PROGRM
+
+         WHERE  PROGRM_ID = 'MHSHRB000'
+ {executed in 22 msec}
+2021-04-12 19:19:33 INFO  [Slf4jSpyLogDelegator.java:sqlTimingOccurred:373] - /* batch.bulet.selectTableKeyColumn */
+        SELECT column_name AS columnName
+		FROM information_schema.`COLUMNS` 
+		WHERE table_schema = 'erpsw'
+		AND table_name = 'MHS_PROOF_ISSU'
+		AND column_key = 'PRI'
+		ORDER BY ordinal_position
+ {executed in 3 msec}
+2021-04-12 19:19:33 INFO  [Slf4jSpyLogDelegator.java:sqlTimingOccurred:373] - /* batch.bulet.selectTableColumn */
+        SELECT table_schema as owner, table_name AS tableName, ordinal_position AS columnId, column_name AS columnName , column_comment AS comments, 
+		    data_type AS dataType, 
+		    IFNULL(CAST(CHARACTER_MAXIMUM_LENGTH AS CHAR(10)), CONCAT(CAST(NUMERIC_PRECISION AS CHAR(10)),',',CAST(NUMERIC_SCALE AS CHAR(10)))) AS dataLength,
+		                     LEFT(is_nullable,1) AS nullable  -- 
+			    /*, column_key */
+			FROM information_schema.`COLUMNS` 
+			WHERE table_schema = 'erpsw'
+			AND table_name = 'MHS_PROOF_ISSU'
+			ORDER BY tableName, columnId;
+ {executed in 4 msec}
+2021-04-12 19:19:33 INFO  [Slf4jSpyLogDelegator.java:sqlTimingOccurred:373] - /* batch.bulet.selectCondList */
+        SELECT A.CND_TY      AS cndTy,
+               A.CMMN_CODE   AS cmmnCode,
+               C.columnName AS columnName,
+               C.comments    AS comments
+          FROM STM_CND A, STM_PROGRM B, 
+            (
+                SELECT table_name AS tableName, 
+                    column_name AS columnName,
+                    column_comment AS comments
+                FROM information_schema.`COLUMNS` 
+                WHERE table_schema = 'xerp_2021'
+            ) C
+         WHERE A.PROGRM_ID = B.PROGRM_ID
+           AND B.REL_TBL_NM = C.tableName
+           AND A.COL = C.columnName
+           AND A.PROGRM_ID = 'MHSHRB000'
+         ORDER BY OUTPT_ORDR
+ {executed in 2 msec}
+2021-04-12 19:19:33 INFO  [Slf4jSpyLogDelegator.java:sqlTimingOccurred:373] - /* batch.bulet.selectTableKeyColumn */
+        SELECT column_name AS columnName, 
+            IFNULL(CAST(CHARACTER_MAXIMUM_LENGTH AS CHAR(10)), CONCAT(CAST(NUMERIC_PRECISION AS CHAR(10)),',',CAST(NUMERIC_SCALE AS CHAR(10)))) AS dataLength,
+            column_comment AS comments
+        FROM information_schema.`COLUMNS` 
+        WHERE table_schema = 'erpsw'
+        AND table_name = 'MHS_PROOF_ISSU'
+        AND column_key = 'PRI'
+        ORDER BY ordinal_position
+ {executed in 3 msec}
+2021-04-12 19:19:33 INFO  [ProcessBuletMain.java:triggerMysql:187] - [소스제너레이터] 경과시간 :[0.913]
+2021-04-12 19:19:33 INFO  [ProcessBuletMain.java:triggerMysql:188] - [소스제너레이터] end >>>

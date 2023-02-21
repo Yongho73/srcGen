@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><!--Converted at: Mon Mar 12 20:51:12 
+	KST 2018 -->
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="batch.bulet">
+
+    <select id="selectProgList" parameterType="Bulet" resultType="Bulet">
+        /* batch.bulet.selectProgList */
+        SELECT PROGRM_ID AS menuId,            
+               PROGRM_NM AS menuNm,
+               PCKAGE_NM AS pckageNm,
+               SUB_PCKAGE_ID AS subPackageId,
+               PROGRM_ID AS progrmId,
+               REL_TBL_NM AS relTableName 
+          FROM STM_PROGRM
+
+        <trim prefix="WHERE" prefixOverrides="AND|OR">
+            <if test="pckageNm != null and pckageNm != ''">
+                AND PCKAGE_NM = #{pckageNm}
+            </if>
+            <if test="progrmId != null and progrmId != ''">
+                AND PROGRM_ID = #{progrmId}
+            </if>       
+        </trim>
+
+    </select> 
+    
+    <select id="selectTableColumn" parameterType="String" resultType="Bulet">
+        /* batch.bulet.selectTableColumn */
+        SELECT table_schema as owner, table_name AS tableName, ordinal_position AS columnId, column_name AS columnName , column_comment AS comments, 
+		    data_type AS dataType, 
+		    IFNULL(CAST(CHARACTER_MAXIMUM_LENGTH AS CHAR(10)), CONCAT(CAST(NUMERIC_PRECISION AS CHAR(10)),',',CAST(NUMERIC_SCALE AS CHAR(10)))) AS dataLength,
+		                     LEFT(is_nullable,1) AS nullable  -- 
+			    /*, column_key */
+			FROM information_schema.`COLUMNS` 
+			WHERE table_schema = #{ownerMysql}
+			AND table_name = #{relTableName}
+			ORDER BY tableName, columnId;
+    </select>
+    
+    <select id="selectTableKeyColumn" parameterType="String" resultType="String">   
+        /* batch.bulet.selectTableKeyColumn */
+        SELECT column_name AS columnName
+		FROM information_schema.`COLUMNS` 
+		WHERE table_schema = #{ownerMysql}
+		AND table_name = #{relTableName}
+		AND column_key = 'PRI'
+		ORDER BY ordinal_position
+    </select>
+    
+    <select id="selectTableKeyColumns" parameterType="String" resultType="Bulet">   
+        /* batch.bulet.selectTableKeyColumn */
+        SELECT column_name AS columnName, 
+            IFNULL(CAST(CHARACTER_MAXIMUM_LENGTH AS CHAR(10)), CONCAT(CAST(NUMERIC_PRECISION AS CHAR(10)),',',CAST(NUMERIC_SCALE AS CHAR(10)))) AS dataLength,
+            column_comment AS comments
+        FROM information_schema.`COLUMNS` 
+        WHERE table_schema = #{ownerMysql}
+        AND table_name = #{relTableName}
+        AND column_key = 'PRI'
+        ORDER BY ordinal_position
+    </select>
+    
+    <select id="selectTableComments" parameterType="String" resultType="String">    
+        /* batch.bulet.selectTableComments */
+        SELECT 
+		    DISTINCT IFNULL(table_comment, TABLE_NAME) AS comments 
+		FROM
+		    information_schema.tables
+		WHERE table_schema = #{ownerMssql}
+		  AND table_name = #{relTableName}
+    </select>
+    
+    <select id="selectCondList" parameterType="String" resultType="Bulet">
+        /* batch.bulet.selectCondList */
+        SELECT A.CND_TY      AS cndTy,
+               A.CMMN_CODE   AS cmmnCode,
+               C.columnName AS columnName,
+               C.comments    AS comments
+          FROM STM_CND A, STM_PROGRM B, 
+            (
+                SELECT table_name AS tableName, 
+                    column_name AS columnName,
+                    column_comment AS comments
+                FROM information_schema.`COLUMNS` 
+                WHERE table_schema = #{ownerMssql}
+            ) C
+         WHERE A.PROGRM_ID = B.PROGRM_ID
+           AND B.REL_TBL_NM = C.tableName
+           AND A.COL = C.columnName
+           AND A.PROGRM_ID = #{progrmId}
+         ORDER BY OUTPT_ORDR
+    </select>
+		
+</mapper>

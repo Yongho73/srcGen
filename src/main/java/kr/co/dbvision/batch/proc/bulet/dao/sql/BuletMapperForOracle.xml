@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><!--Converted at: Mon Mar 12 20:51:12 
+	KST 2018 -->
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="batch.bulet">
+	
+	<select id="selectProgList" parameterType="Bulet" resultType="Bulet">
+		/* batch.bulet.selectProgList */
+		SELECT PROGRM_ID AS menuId,		       
+		       PROGRM_NM AS menuNm,
+		       PCKAGE_NM AS pckageNm,
+		       SUB_PCKAGE_ID AS subPackageId,
+		       PROGRM_ID AS progrmId,
+		       REL_TBL_NM AS relTableName 
+		  FROM STM_PROGRM
+
+		<trim prefix="WHERE" prefixOverrides="AND|OR">
+			<if test="pckageNm != null and pckageNm != ''">
+		       	AND PCKAGE_NM = #{pckageNm}
+			</if>
+			<if test="progrmId != null and progrmId != ''">
+		       	AND PROGRM_ID = #{progrmId}
+			</if>		
+		</trim>
+
+	</select> 
+	
+	<select id="selectTableColumn" parameterType="Bulet" resultType="Bulet">
+		/* batch.bulet.selectTableColumn */
+		SELECT A.OWNER AS owner,
+		       A.TABLE_NAME AS tableName,
+		       A.COLUMN_ID AS columnId,
+		       A.COLUMN_NAME AS columnName,
+		       B.COMMENTS AS comments,
+		       A.DATA_TYPE AS dataType,
+		       A.DATA_LENGTH AS dataLength,
+		       A.NULLABLE AS nullable
+		  FROM ALL_TAB_COLUMNS A, ALL_COL_COMMENTS B
+		 WHERE A.TABLE_NAME = B.TABLE_NAME
+		   AND A.OWNER = B.OWNER
+		   AND A.COLUMN_NAME = B.COLUMN_NAME
+		   AND A.TABLE_NAME = #{relTableName}
+           AND A.OWNER = #{owner}
+           ORDER BY A.COLUMN_ID
+	</select>
+	
+	<select id="selectTableKeyColumn" parameterType="Bulet" resultType="String">	
+		/* batch.bulet.selectTableKeyColumn */
+		SELECT C.COLUMN_NAME AS columnName 
+		  FROM USER_CONS_COLUMNS C, USER_CONSTRAINTS S
+		 WHERE C.CONSTRAINT_NAME = S.CONSTRAINT_NAME
+		   AND C.OWNER = S.OWNER
+		   AND S.CONSTRAINT_TYPE = 'P'
+		   AND C.TABLE_NAME = #{relTableName}
+		   AND C.OWNER = #{owner}
+	</select>
+	
+	<select id="selectTableKeyColumns" parameterType="Bulet" resultType="Bulet">	
+		/* batch.bulet.selectTableKeyColumn */
+		SELECT C.COLUMN_NAME AS columnName,
+			   NVL((SELECT DATA_LENGTH
+				      FROM ALL_TAB_COLUMNS
+				     WHERE TABLE_NAME = C.TABLE_NAME
+				       AND OWNER = C.OWNER
+				       AND COLUMN_NAME = C.COLUMN_NAME), 0) AS dataLength,
+			   NVL( (SELECT COMMENTS 
+			           FROM ALL_COL_COMMENTS 
+			          WHERE TABLE_NAME = C.TABLE_NAME 
+			            AND OWNER = C.OWNER 
+			            AND COLUMN_NAME = C.COLUMN_NAME), C.COLUMN_NAME) AS comments 
+		  FROM USER_CONS_COLUMNS C, USER_CONSTRAINTS S
+		 WHERE C.CONSTRAINT_NAME = S.CONSTRAINT_NAME
+		   AND C.OWNER = S.OWNER
+		   AND S.CONSTRAINT_TYPE = 'P'
+		   AND C.TABLE_NAME = #{relTableName}
+		   AND C.OWNER = #{owner}
+	</select>
+	
+	<select id="selectTableComments" parameterType="Bulet" resultType="String">	
+		/* batch.bulet.selectTableComments */
+		SELECT NVL(B.COMMENTS, A.TABLE_NAME) AS comments
+		  FROM ALL_TABLES A, ALL_TAB_COMMENTS B
+		 WHERE A.TABLE_NAME = B.TABLE_NAME
+		   AND A.OWNER = B.OWNER
+		   AND A.TABLE_NAME = #{relTableName}
+		   AND A.OWNER = #{owner}
+	</select>
+	
+	<select id="selectCondList" parameterType="Bulet" resultType="Bulet">
+		/* batch.bulet.selectCondList */
+		SELECT A.CND_TY      AS cndTy,
+		       A.CMMN_CODE   AS cmmnCode,
+		       C.COLUMN_NAME AS columnName,
+		       C.COMMENTS    AS comments
+		  FROM STM_CND A, STM_PROGRM B, ALL_COL_COMMENTS C
+		 WHERE A.PROGRM_ID = B.PROGRM_ID
+		   AND B.REL_TBL_NM = C.TABLE_NAME
+		   AND A.COL = C.COLUMN_NAME
+		   AND C.OWNER = #{owner}
+		   AND A.PROGRM_ID = #{progrmId}
+		 ORDER BY OUTPT_ORDR
+	</select>
+	
+</mapper>
